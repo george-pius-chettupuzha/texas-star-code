@@ -1,0 +1,82 @@
+.contact--container{
+        display: flex;
+
+        .contact--left{
+            flex: 50%;
+            background-color: $lightgrey;
+            padding: 64px 140px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .contact--main{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .contact--info{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+
+                h3{
+                    font-weight: 300;
+                    font-size: 24px;
+                    padding-bottom: 8px;
+                }
+
+                p{
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            } 
+        }
+
+        .contact--right{
+            flex: 50%;
+            background-color: $white;
+            padding: 64px 140px;
+            
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                
+                
+                
+                label > input{
+                    width: 100%;
+                    padding: 12px 0px;
+                    border: unset;
+                    border-bottom: 1px solid $black;
+                }
+
+                .btn{
+                    width: 100%;
+                    margin-top: 16px;
+                }
+
+            }
+        }
+    
+}
+
+@include breakpoint {
+    .contact--container{
+        display: flex;
+        flex-direction: column;
+
+        .contact--left{
+            width: 100vw;
+            padding: 3rem 3rem;
+        }
+
+        .contact--right{
+            width: 100vw;
+            padding: 3rem 3rem;
+        }
+    }
+
+}

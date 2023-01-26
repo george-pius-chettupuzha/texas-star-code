@@ -1,0 +1,134 @@
+.footer--container{
+    background-color: $black;
+    color: $white;
+    padding: 3rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+
+    .footer--wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        .footer--content{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+
+            img{
+                height: auto;
+                width: 40%;
+            }
+
+            p{
+                width: 60%;
+            }
+        }
+
+        .footer--navigation{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: flex-end;
+
+            .footer--links{
+                display: flex;
+                gap: 40px;
+
+                ul{
+                    display: flex;
+                    gap: 40px;
+                    align-items: center;
+                    list-style: none;
+
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+            }
+
+            .footer--sm {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+
+                a{
+                    color: $white;
+                    font-size: 24px;
+                    transition: 0.2s ease-in-out;
+                }
+
+                a:hover{
+                    color: $primary;
+                }
+            } 
+        }
+    }
+
+    .footer--copy{
+        padding-top: 40px;
+        border-top: 1px solid rgba($color: $white, $alpha: 0.3);
+    }
+
+    .footer--scroll{
+        position: absolute;
+        top: -1.5rem;
+        right: 1.5rem;
+    }
+}
+
+@include breakpoint {
+    .footer--container{
+        width: 100vw;
+        padding: 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .footer--wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .footer--content{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+
+                img{
+                    width: 50%;
+                }
+
+                p{
+                    width: 100%;
+                }
+                
+            }
+
+            .footer--links{
+                flex-direction: column;
+
+                ul{
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .footer--copy{
+            text-align: center;
+        }
+
+        .footer--scroll{
+            position: absolute;
+            top: -1.5rem;
+            left: 50;
+            right: -50;
+        }
+    }
+}

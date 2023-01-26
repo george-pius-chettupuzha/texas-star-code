@@ -1,0 +1,235 @@
+.about--container {
+
+    .hero--container {
+
+        h1,
+        p {
+            color: $black !important;
+        }
+    }
+
+    .intro--container {
+        padding: 3rem 6.5rem;
+        display: flex;
+        gap: 3rem;
+
+        .left--content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 1rem;
+        }
+
+        .right--content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                color: $primary;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .counter--container {
+        background-color: $primary;
+
+        .itemlist {
+            display: flex;
+            justify-content: space-between;
+
+            .counter--item {
+                text-align: center;
+
+                h2 {
+                    font-size: 4rem;
+                    font-weight: 300;
+                    color: $white;
+                }
+
+                p {
+                    font-weight: 500;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .team--container {
+        background-color: $lightgrey;
+        padding: 3rem 6.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .head--content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cards {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+
+            .card {
+                
+                background-color: $white;
+
+                .card--content {
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    .sm--links {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                        padding: 0.5rem 0rem;
+
+                        a {
+                            color: $black;
+                            font-size: 1.2rem;
+                            transition: 0.2s ease-in-out;
+                        }
+
+                        a:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .resource--container{
+        padding: 3rem 6.5rem;
+        background-color: $darkgrey;
+
+        h2{
+            color: $white;
+        }
+
+        .resource{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        .caregiver{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
+
+@include breakpoint {
+
+    .about--container {
+
+        .intro--container {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 3rem 3rem;
+            text-align: center;
+        }
+
+        .counter--container {
+
+            .itemlist {
+                flex-direction: column;
+                gap: 3rem;
+            }
+        }
+
+        // -----
+
+
+        .team--container {
+            width: 100%;
+            padding: 3rem 3rem;
+
+            .head--content{
+                padding: 0 !important;
+
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .cards{
+                flex-direction: column;
+
+                .card{
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+        .resource--container{
+            padding: 3rem 2rem;
+            background-color: $darkgrey;
+    
+            h2{
+                color: $white;
+                font-size: 1.5rem;
+            }
+    
+            .resource{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+    
+                .cards{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 1rem;
+                }
+            }
+    
+            .caregiver{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+    
+                .cards{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+.card--container{
+    background-color: $white;
+    padding: 24px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    border-radius: 4px;
+
+    h2{
+        color: $black !important;
+        font-size: 24px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $primary;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+    }
+
+    a:hover{
+        transition: 0.5s ease-in-out;
+        gap: 14px;
+    }
+}

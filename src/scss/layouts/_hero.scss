@@ -1,0 +1,142 @@
+.hero--container {
+
+    .hero--banner > img {
+        display: none;
+    }
+
+    .hero--content {
+        width: 50%;
+        height: 80vh;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 0rem 6.5rem;
+
+        .hero--head{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}
+
+.home--banner{
+    background-image: url('../../assets/hero.jpg');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.about--banner{
+    background: url('../../assets/hero--about.jpg');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.contact--banner{
+    background: url('../../assets/hero--contact.jpeg');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.career--banner{
+    background: url('../../assets/hero--career.jpg');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+
+    h1, p{
+        color: $black;
+    }
+}
+
+.services--banner{
+    background: url('../../assets/hero--service.jpg');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+
+    h1, p{
+        color: $black;
+    }
+}
+
+@include breakpoint {
+    .hero--container {
+
+        .hero--banner > img {
+            display: block;
+            width: 100vw;
+            height: 30vh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero--content {
+            width: 100vw;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            text-align: center;
+            padding: 3rem 3rem;
+            color: $black;
+            background-color: $lightgrey;
+
+            .hero--head {
+                gap: 1rem;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+
+    .home--banner{
+        background-image: none !important;
+        height: auto !important;
+    }
+    
+    .about--banner{
+        background-image: none;
+        height: auto;
+    }
+    
+    .contact--banner{
+        background-image: none !important;
+        height: fit-content !important;
+    }
+
+    .career--banner{
+        background-image: none !important;
+        height: fit-content !important;
+    }
+
+    .services--banner{
+        background-image: none !important;
+        height: fit-content !important;
+    }
+}
+
+
+

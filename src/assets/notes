@@ -1,0 +1,155 @@
+<div className="home--container home--banner">
+
+      Hero Banner Section
+      <Hero
+        Heading={"Welcome to Texas Star DME! We're Serving Your Needs"}
+        Description={"Hospitality without the hassle! Texas Star DME provides hospices with an easy-to-use DME management solution, maintains a high-level stock inventory, and provides exceptional customer care service. Our trained personnel assist customers with all kinds of inquiries and helps in improving the patient care."}
+        ButtonLink={"Contact Our Representative"}
+      />
+
+      <div className="home--wrapper ">
+
+        {/* Counter Section */}
+        <div className="counter--container">
+          <div className="counter--wrapper margin--wrapper">
+            <div className="col col--one">
+              <h2>900+</h2>
+              <p>Network Providers</p>
+            </div>
+            <div className="col col--two">
+              <h2>1800+</h2>
+              <p>Our Locations</p>
+            </div>
+            <div className="col col--three">
+              <h2>1m+</h2>
+              <p>Patients Serveds</p>
+            </div>
+            <div className="col col--four">
+              <h2>37+</h2>
+              <p>Served States</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Why Tesax Star Section */}
+        <div className="why--container">
+          <div className="why--wrapper margin--wrapper">
+            <div className="left--why">
+              {/* <img src={WhyImage} alt={"Why Image"}></img> */}
+              <img src={ Image.home.whyImage } alt={"Why Image"}></img>
+            </div>
+
+            <div className="right--why">
+              <div className="why--content">
+                <h2 className="heading--two">Why Texas Star DME</h2>
+                <p className="para">Since 2000, when we started in the North Texas area, we've been happy to meet the needs of hospice care providers and patients. Hospices and direct suppliers of DME benefit from our value and benefits.</p>
+                <div className="list--view">
+
+                  <div className="list"> < FaArrowRight /> <p className="para">DME provider with a personalized touch and customer care</p> </div>
+                  <div className="list"> < FaArrowRight /> <p className="para">Automated DME workflows and solutions that are 100% efficient and HIPAA compliant</p> </div>
+                  <div className="list"> < FaArrowRight /> <p className="para">Streamline operations with Serious ERP for order management - easy-to-use and efficient with real-time tracking</p> </div>
+                  <div className="list"> < FaArrowRight /> <p className="para">We are committed to having a customer support team that is available 24 hours a day, 7 days a week.</p> </div>
+                  <div className="list"> < FaArrowRight /> <p className="para">Dedicated Client Relations Manager</p> </div>
+                  <div className="list"> < FaArrowRight /> <p className="para">Warehouse on the wheel - fully-equipped truck, faster delivery</p> </div>
+      
+                    
+                    
+                    
+                    
+                    
+                    
+                  
+                </div>
+              </div>
+
+
+              <NavLink className={"btn btn--primary--Solid btn--primary--Solid"} to="/About">Learn More About Us</NavLink>
+            </div>
+          </div>
+        </div>
+
+        {/* Services */}
+        <div className="services--container">
+          <div className="services--wrapper margin--wrapper">
+            <div className="top--content">
+              <div className="services--content">
+                <h2 className="heading--two">Our Services</h2>
+                <p className="para">Texas Star is a medical supplies and equipment company based in
+                  Dallas-Fort Worth, Texas serving hospice centers. We offer a wide
+                  range of products and services, such as oxygen therapy, respiratory
+                  therapy, sleep therapy, and safety equipment. Our knowledgeable and
+                  friendly staff will give you the best customer service, offer you the
+                  latest technology, and help you with every step of your purchase. Texas
+                  Star HMES provides 24/7 customer service. We're here for you around the
+                  clock! Our technicians are trained and certified to install, maintain,
+                  and repair a wide range of equipment, so you can trust that we will not
+                  leave anything to chance.
+                </p>
+              </div>
+              <NavLink className={"btn btn--primary--Solid btn--primary--Solid"} to="/Services">Learn More Our Services</NavLink>
+            </div>
+
+            <div className="bottom--content">
+              <div className="cards">
+
+                <div className="card--item one">
+                  <img src={Base} alt="base" />
+                  <h3 className="heading--three">Item {<br />} Order</h3>
+                  <p className="para">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy.</p>
+                </div>
+
+                <div className="card--item two">
+                  <img src={Base} alt="base" />
+                  <h3 className="heading--three">Shipping & Delivery</h3>
+                  <p className="para">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy.</p>
+                </div>
+
+                <div className="card--item three">
+                  <img src={Base} alt="base" />
+                  <h3 className="heading--three">Pickup, Return & Exchange</h3>
+                  <p className="para">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy.</p>
+                </div>
+
+                <div className="card--item four">
+                  <img src={Base} alt="base" />
+                  <h3 className="heading--three">Warranty & Repair</h3>
+                  <p className="para">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonial */}
+
+        <div className="testimonial--container">
+          <div className="testimonial--wrapper margin--wrapper">
+            <div className="left--content">
+              <h2 className="heading--two">What Our Customers Are Saying</h2>
+              <p className="para">Lorem Ipsum is simply text of the printing and typesetting.</p>
+            </div>
+
+            <div className="right--content">
+              <Slider />
+            </div>
+          </div>
+        </div>
+
+        {/* Contact and Form */}
+
+        <Contact />
+
+      </div>
+
+
+
+    </div>

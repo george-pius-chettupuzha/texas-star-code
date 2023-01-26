@@ -1,0 +1,14 @@
+
+.contactp--container{
+    h1, p{
+        color: $black;
+    }
+}
+
+@include breakpoint{
+    .contactp--container{
+        .hero--content{
+            background-color: $white !important;
+        }
+    }
+}
