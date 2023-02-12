@@ -15,14 +15,17 @@
         display: flex;
         gap: 16px;
         align-items: center;
-
+        @include breakpoint{
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }
 
 .swiper-pagination-bullets{
     display: flex !important;
     left: unset !important;
-
+    
     span{
         background-color: $white;
     }

@@ -8,7 +8,7 @@ import Hero from '../Globals/Hero';
 
 // Fa Icon
 import { FaArrowRight } from "react-icons/fa";
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 
 function Home() {

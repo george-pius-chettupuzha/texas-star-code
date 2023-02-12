@@ -1,7 +1,12 @@
 @mixin breakpoint {
-    @media (max-width: 48em) {
+    @media (max-width: 767px) {
         @content;
     }
 }
 
 
+@mixin tabletMax {
+    @media (max-width: 991px) {
+        @content;
+    }
+}

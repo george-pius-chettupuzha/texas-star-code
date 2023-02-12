@@ -1,6 +1,8 @@
 .contact--container{
         display: flex;
-
+        @include tabletMax{
+            flex-direction: column;
+        }
         .contact--left{
             flex: 50%;
             background-color: $lightgrey;

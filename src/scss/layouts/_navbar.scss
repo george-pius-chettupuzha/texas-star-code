@@ -1,4 +1,4 @@
-nav{
+nav {
     width: 100vw;
     height: 5rem;
     display: flex;
@@ -11,65 +11,127 @@ nav{
     background-color: $white;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
     z-index: 100;
-    
-    ul{
+    @include breakpoint {
+        padding: 20px;
+    }
+    ul {
         display: flex;
         gap: 40px;
         list-style: none;
 
-        .link{
+        @include tabletMax {
+            display: none;
+            position: fixed;
+            padding: 5rem 0;
+            background-color: #f9f9f9;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            text-align: center;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+
+            &.nav--links-mobile {
+                display: flex;
+            }
+
+        }
+
+
+        .link {
             text-decoration: none;
             color: $black;
             padding-bottom: 8px;
         }
 
-        .link:hover{
+        .link:hover {
             color: $primary;
             border-bottom: 1px solid $primary;
         }
 
-        .active{
+        .active {
             color: $primary;
             border-bottom: 1px solid $primary;
         }
     }
 
-    .mobile-menu-icon{
+    .mobile-menu-icon {
         display: none;
-    }
-    
-}
 
-@include breakpoint {
-    nav{
-        width: 100vw;
-        padding: 0rem 2rem;
+        @include tabletMax {
 
-        .nav--links{
-            display: none;
-        }
-
-        .nav--links-mobile{
-            position: absolute;
-            padding: 5rem 0;
-            background-color: #f9f9f9;
-            top: 5rem;
-            left: 0;
-            width: 100vw;
-            height: 64vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mobile-menu-icon{
             display: block;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
+
         }
     }
+
 }
+
+// @include tabletMax {
+//     nav {
+//         padding: 2rem;
+//         &--links {
+//             display: none;
+//             position: fixed;
+//             padding: 5rem 0;
+//             background-color: #f9f9f9;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             text-align: center;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 4rem;
+//             align-items: center;
+//             justify-content: center;
+//             z-index: -1;
+//         }
+
+//         &--logo {
+//             a {
+//                 display: inline-block;
+//             }
+
+//         }
+//     }
+// }
+
+// @include breakpoint {
+//     nav {
+//         width: 100vw;
+//         padding: 0rem 2rem;
+
+//         .nav--links {
+//             display: none;
+//         }
+
+//         .nav--links-mobile {
+//             position: fixed;
+//             padding: 5rem 0;
+//             background-color: #f9f9f9;
+//             top: 0;
+//             left: 0;
+//             width: 100vw;
+//             height: 100%;
+//             text-align: center;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 4rem;
+//             align-items: center;
+//             justify-content: center;
+//             z-index: -1;
+//         }
+
+//         .mobile-menu-icon {
+//             display: block;
+//             background: none;
+//             border: none;
+//             font-size: 1.5rem;
+//         }
+//     }
+// }

@@ -10,7 +10,9 @@
         margin-top: -10%;
         box-shadow: 0px 7px 24px 0px rgba(0, 0, 0, 0.12);
         border-radius: 1rem;
-
+        @include tabletMax{
+            grid-template-columns: repeat(2, 1fr);
+        }
         .counter--item {
             background-color: $white;
             padding: 2rem;
@@ -36,7 +38,9 @@
     padding: 0rem 6.5rem 3rem 6.5rem;
     gap: 2.5rem;
     align-items: center;
-
+    @include tabletMax{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .why--content {
         display: grid;
         gap: 2rem;
@@ -94,7 +98,12 @@
     .cards {
         display: flex;
         gap: 1rem;
-
+        @include tabletMax{
+            flex-wrap: wrap;
+            .card{
+                flex-basis: calc(50% - 1rem);
+            }
+        }
 
         .card {
             display: flex;
@@ -129,7 +138,9 @@
     .testimonial--wrapper{
         display: flex;
         align-items: center;
-
+        @include tabletMax{
+            flex-direction: column;
+        }
         .left--content{
             width: 30%;
             padding: 50px;
@@ -138,6 +149,10 @@
             flex-direction: column;
             gap: 24px;
             border-radius: 4px;
+            @include tabletMax{
+                width: 100%;
+                margin: 0 0 30px 0;
+            }
         }
 
         .right--content{
@@ -145,6 +160,10 @@
             height: 100%;
             padding: 0px 50px;
             color: $white;
+            @include tabletMax{
+                width: 100%;
+                padding: 0;
+            }
         }
     }
 }
@@ -245,7 +264,9 @@
     .testimonial--container{
         padding: 3rem 3rem;
         background-color: $primary;
-    
+        @media(max-width:767px){
+            padding: 3rem 1.5rem;
+        }
         .testimonial--wrapper{
             display: flex;
             flex-direction: column;
@@ -269,6 +290,9 @@
 
                 .top--content{
                     text-align: center;
+                    @include breakpoint{
+                        padding: 0 1.5rem;
+                    }
                 }
             }
         }

@@ -13,9 +13,14 @@
             gap: 1rem;
             color: $white;
             padding: 0rem 12rem;
-
+            @include tabletMax{
+                padding: 0;
+            }
             p{
                 padding: 0rem 10rem;
+                @include tabletMax{
+                    padding: 0;
+                }
             }
         }
 
@@ -24,7 +29,9 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1rem;
-
+                @include tabletMax{
+                    grid-template-columns: repeat(2, 1fr);
+                }
                 .card{
                     background-color: $white;
                     padding: 2rem;

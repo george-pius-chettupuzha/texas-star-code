@@ -1,6 +1,6 @@
 .hero--container {
 
-    .hero--banner > img {
+    .hero--banner>img {
         display: none;
     }
 
@@ -14,7 +14,11 @@
         gap: 2.5rem;
         padding: 0rem 6.5rem;
 
-        .hero--head{
+        @include tabletMax {
+            width: 100%;
+        }
+
+        .hero--head {
             display: flex;
             flex-direction: column;
             gap: 1rem;
@@ -22,7 +26,7 @@
     }
 }
 
-.home--banner{
+.home--banner {
     background-image: url('../../assets/hero.jpg');
     width: 100vw;
     height: 80vh;
@@ -31,7 +35,7 @@
     background-size: cover !important;
 }
 
-.about--banner{
+.about--banner {
     background: url('../../assets/hero--about.jpg');
     width: 100vw;
     height: 80vh;
@@ -40,7 +44,7 @@
     background-size: cover !important;
 }
 
-.contact--banner{
+.contact--banner {
     background: url('../../assets/hero--contact.jpeg');
     width: 100vw;
     height: 80vh;
@@ -49,7 +53,7 @@
     background-size: cover !important;
 }
 
-.career--banner{
+.career--banner {
     background: url('../../assets/hero--career.jpg');
     width: 100vw;
     height: 80vh;
@@ -57,12 +61,13 @@
     background-position: center !important;
     background-size: cover !important;
 
-    h1, p{
+    h1,
+    p {
         color: $black;
     }
 }
 
-.services--banner{
+.services--banner {
     background: url('../../assets/hero--service.jpg');
     width: 100vw;
     height: 80vh;
@@ -70,7 +75,8 @@
     background-position: center !important;
     background-size: cover !important;
 
-    h1, p{
+    h1,
+    p {
         color: $black;
     }
 }
@@ -78,7 +84,7 @@
 @include breakpoint {
     .hero--container {
 
-        .hero--banner > img {
+        .hero--banner>img {
             display: block;
             width: 100vw;
             height: 30vh;
@@ -112,31 +118,28 @@
     }
 
 
-    .home--banner{
+    .home--banner {
         background-image: none !important;
         height: auto !important;
     }
-    
-    .about--banner{
+
+    .about--banner {
         background-image: none;
         height: auto;
     }
-    
-    .contact--banner{
+
+    .contact--banner {
         background-image: none !important;
         height: fit-content !important;
     }
 
-    .career--banner{
+    .career--banner {
         background-image: none !important;
         height: fit-content !important;
     }
 
-    .services--banner{
+    .services--banner {
         background-image: none !important;
         height: fit-content !important;
     }
 }
-
-
-

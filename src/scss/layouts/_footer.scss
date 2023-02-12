@@ -10,7 +10,9 @@
     .footer--wrapper{
         display: flex;
         justify-content: space-between;
-
+        @include tabletMax{
+            flex-direction: column;
+        }
         .footer--content{
             display: flex;
             flex-direction: column;
